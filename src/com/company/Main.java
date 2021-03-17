@@ -1,6 +1,7 @@
 package com.company;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.LinkedList;
 
 public class Main {
@@ -56,6 +57,18 @@ public class Main {
         }
         else{
             System.out.println("Nume Inexistent");
+        }
+
+
+        //Iterator
+        Iterator it=arrayList.iterator();
+        Iterator it2=listA.iterator();
+        System.out.println("Iterator");
+        while(it.hasNext()){
+            System.out.println(it.next());
+        }
+        while (it2.hasNext()){
+            System.out.println(it2.next());
         }
     }
 }
